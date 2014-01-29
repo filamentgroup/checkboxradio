@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="checkboxradio.css" />
+	<title>CheckboxRadio</title>
+</head>
+<body>
+	<h1>CheckboxRadio</h1>
+	<div class="container">
+
+		<h3>Checkbox</h3>
+		<label class="checkbox">
+			<input name="single" value="10" checked="" type="checkbox">
+			<span class="label-text">Single Checkbox<em>Description</em></span>
+		</label>
+
+		<h3>Checkbox Set</h3>
+		<ul class="listview checkbox-strip">
+			<li>
+				<label class="checkbox">
+					<input name="feature-1" value="1" checked="" type="checkbox">
+					<span class="label-text">Feature 1</span>
+				</label>
+			</li>
+			<li>
+				<label class="checkbox">
+					<input name="feature-2" value="2" checked="" type="checkbox">
+					<span class="label-text">Feature 2 - with a longer text label</span>
+				</label>
+			</li>
+			<li>
+				<label class="checkbox">
+					<input name="feature-3" value="3" type="checkbox">
+					<span class="label-text">Feature 3</span>
+				</label>
+			</li>
+		</ul>
+
+		<h3>Radio Set</h3>
+		<ul class="listview">
+			<li>
+				<label class="radiobutton">
+					<input name="amt2" value="10" checked="" type="radio">
+					<span class="label-text">$<strong>10</strong></span>
+				</label>
+			</li>
+			<li>
+				<label class="radiobutton">
+					<input name="amt2" value="25" type="radio">
+					<span class="label-text">$<strong>25</strong></span>
+				</label>
+			</li>
+			<li>
+				<label class="radiobutton">
+					<input name="amt2" value="50" type="radio">
+					<span class="label-text">$<strong>50</strong></span>
+				</label>
+			</li>
+			<li>
+				<label class="radiobutton">
+					<input name="amt2" value="100" type="radio">
+					<span class="label-text">$<strong>100</strong></span>
+				</label>
+			</li>
+		</ul>
+
+		<h3>Radio Strip</h3>
+		<fieldset class="radio-strip">
+			<label>
+				<input name="amt" value="10" checked="" type="radio">
+				<span class="label-text">$<strong>10</strong></span>
+			</label>
+			<label>
+				<input name="amt" value="25" type="radio">
+				<span class="label-text">$<strong>25</strong></span>
+			</label>
+			<label>
+				<input name="amt" value="50" type="radio">
+				<span class="label-text">$<strong>50</strong></span>
+			</label>
+			<label>
+				<input name="amt" value="100" type="radio">
+				<span class="label-text">$<strong>100</strong></span>
+			</label>
+		</fieldset>
+	</div>
+
+	<!-- normally you would concatenate these -->
+	<script src="jquery.js"></script>
+	<script src="initial.js"></script>
+	<script src="checkboxradio.js"></script>
+	<script src="checkboxradio-extension.js"></script>
+	<script src="checkboxradio-init.js"></script>
+</body>
+</html>
