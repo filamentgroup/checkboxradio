@@ -8,11 +8,18 @@
 (function( CheckboxRadio, $, w ) {
 
 	var pluginName = "checkbox",
+		initialized = pluginName + "_init",
 		initSelector = "input[type=checkbox], input[type=radio]";
 
 	$.fn[ pluginName ] = function(){
 		return this.each(function(idx, element){
 			var cbr = new CheckboxRadio( element );
+
+			if( cbr.$element.data( initialized ) ) {
+				return;
+			}
+
+			cbr.$element.data( initialized, true );
 
 			// Append check icons to `.label-text` elements
 			if ( !cbr.isRadio ) {
