@@ -24,6 +24,7 @@
 	module( 'CheckboxRadio constructor', {
 		setup: function() {
 			this.checkbox = $( "#single-checkbox" );
+			this.cbr = new CheckboxRadio( this.checkbox[0] );
 		}
 	});
 
@@ -33,9 +34,13 @@
 			new CheckboxRadio();
 		}, Error,
 		"Element needed to initialize");
-		var cbr = new CheckboxRadio( this.checkbox[0] );
-		equal( cbr.element, this.checkbox[0], "element should match" );
-		ok( !cbr.isRadio );
+		equal( this.cbr.element, this.checkbox[0], "element should match" );
+		ok( !this.cbr.isRadio );
+	});
+
+	test( 'applyCheckIcons', function(){
+		this.cbr.applyCheckIcons();
+		ok( this.cbr.parent.find( ".icon-check" ).length );
 	});
 
 	module('jQuery#checkboxradio', {
