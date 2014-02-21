@@ -39,8 +39,16 @@
 	});
 
 	test( 'applyCheckIcons', function(){
+		expect(1);
 		this.cbr.applyCheckIcons();
 		ok( this.cbr.parent.find( ".icon-check" ).length );
+	});
+
+	test( 'toggleCheck', function(){
+		expect(2);
+		ok( !this.cbr.parent.hasClass( "checked" ) );
+		this.cbr.toggleCheck();
+		ok( this.cbr.parent.hasClass( "checked" ) );
 	});
 
 	module('jQuery#checkboxradio', {
