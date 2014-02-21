@@ -24,5 +24,8 @@ jQuery(function($) {
 </script>
 ```
 
+## Demo
+Check the demo [here](http://filamentgroup.github.io/checkboxradio/)
+
 ## Release History
 v0.1.0 - First release
