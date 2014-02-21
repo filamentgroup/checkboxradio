@@ -1,5 +1,5 @@
 /*
- * checkbox plugin
+ * checkbox and radio button plugin
  *
  * Copyright (c) 2013 Filament Group, Inc.
  * Licensed under MIT
