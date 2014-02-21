@@ -5,9 +5,10 @@
  * Licensed under MIT
  */
 
-(function( CheckboxRadio, $, w ) {
+/* global CheckboxRadio:true */
+(function( CheckboxRadio, $ ) {
 
-	var pluginName = "checkbox",
+	var pluginName = "checkboxradio",
 		initialized = pluginName + "_init",
 		initSelector = "input[type=checkbox], input[type=radio]";
 

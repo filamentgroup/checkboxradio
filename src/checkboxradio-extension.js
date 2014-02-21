@@ -1,4 +1,5 @@
-(function( CheckboxRadio, $, w ) {
+/* global CheckboxRadio:true */
+(function( CheckboxRadio ) {
 	"use strict";
 
 	var cl = {

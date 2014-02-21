@@ -31,7 +31,7 @@
 		this.parent[ this.element.checked ? "addClass" : "removeClass" ]( cl.toggle );
 	};
 
-	CheckboxRadio.prototype.change = function( e ){
+	CheckboxRadio.prototype.change = function(){
 		if( this.isRadio && !this.element.checked ){
 			this.element.checked = true;
 			this.radioSiblings.trigger( "change" );
