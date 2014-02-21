@@ -51,6 +51,16 @@
 		ok( this.cbr.parent.hasClass( "checked" ) );
 	});
 
+	test( 'change', function(){
+		expect( 3 );
+		this.cbr.$element.on( "change", function(){
+			ok( true );
+		});
+		ok( this.cbr.element.checked );
+		this.cbr.change();
+		ok( !this.cbr.element.checked );
+	});
+
 	module('jQuery#checkboxradio', {
 		// This will run before each test in this module.
 		setup: function() {
