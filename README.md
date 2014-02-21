@@ -15,16 +15,14 @@ In your web page:
 <script src="dist/checkboxradio.min.js"></script>
 <script>
 jQuery(function($) {
-  $.awesome(); // "awesome"
+	$( document ).bind( "enhance", function(){
+		$( "body" ).addClass( "enhanced" );
+	});
+
+	$( document ).trigger( "enhance" );
 });
 </script>
 ```
 
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
-
 ## Release History
-_(Nothing yet)_
+v0.1.0 - First release

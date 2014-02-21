@@ -1,3 +1,4 @@
+/*global CheckboxRadio:true*/
 (function($) {
 	/*
 		======== A Handy Little QUnit Reference ========
@@ -20,6 +21,23 @@
 			throws(block, [expected], [message])
 	*/
 
+	module( 'CheckboxRadio constructor', {
+		setup: function() {
+			this.checkbox = $( "#single-checkbox" );
+		}
+	});
+
+	test( 'initializing', function(){
+		expect(3);
+		throws( function(){
+			new CheckboxRadio();
+		}, Error,
+		"Element needed to initialize");
+		var cbr = new CheckboxRadio( this.checkbox[0] );
+		equal( cbr.element, this.checkbox[0], "element should match" );
+		ok( !cbr.isRadio );
+	});
+
 	module('jQuery#checkboxradio', {
 		// This will run before each test in this module.
 		setup: function() {
@@ -34,5 +52,4 @@
 		strictEqual(this.checkboxes.checkboxradio(), this.checkboxes, 'should be chainable');
 		strictEqual(this.radiobuttons.checkboxradio(), this.radiobuttons, 'should be chainable');
 	});
-
 }(jQuery));
