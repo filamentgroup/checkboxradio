@@ -1,4 +1,4 @@
-/*! Checkboxradio - v0.1.0 - 2014-02-21
+/*! Checkboxradio - v0.1.0 - 2014-05-27
 * https://github.com/filamentgroup/checkboxradio
 * Copyright (c) 2014 Filament Group; Licensed MIT */
 (function( $, w ) {
