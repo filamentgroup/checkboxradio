@@ -164,67 +164,64 @@ label.radiobutton .label-text img {
 	background-color: #FFF;
 }
 
-/* horizontal radio button set */
-@media all and (min-width: 40em){
-	.radio-strip,
-	.enhanced fieldset.radio-strip {
-		padding: 0;
-		margin: 0;
-		border: 0;
-		border-top: 1px solid #ddd;
-		/*@include globalShadow;*/
-		border-radius: .35em;
-		background-color: #fff;
-		overflow: hidden;
-	}
-	.radio-strip label {
-		-webkit-tap-highlight-color:	rgba(255, 255, 255, 0);
-	}
-	.radio-strip > label {
-		position: relative;
-		padding: 15px 10px;
-		border-bottom: 1px solid #ddd;
-	}
-	.radio-strip > label:first-child .label-text {
-		border-top-left-radius: .4em;
-		border-bottom-left-radius: .4em;
-	}
-	.radio-strip > label:last-child .label-text {
-		border-top-right-radius: .4em;
-		border-bottom-right-radius: .4em;
-		border-right: 0;
-	}
-	.enhanced .radio-strip {
-		display: table;	
-	}
-	.enhanced .radio-strip > label {
-		display: table-cell;
-		vertical-align: middle;
-		position: relative;
-		overflow: hidden;
-		-webkit-touch-callout: none;
-		/*@include user-select(none);*/
-		margin: 0;
-		padding: 0;
-		width: 1%; /* divide cell widths */
-		border: 0;
-	}
-	.enhanced .radio-strip .label-text {
-		position: relative;
-		display: block;
-		padding: 0.75em 0;
-		margin: 0;
-		cursor: pointer;
-		background-color: #fff;
-		text-align: center;
-		border-right: 1px solid #ddd;
-		min-width: 100%;
-	}
-	.enhanced .radio-strip .checked .label-text {
-		background: #58595B;
-		color: #fff;
-	}
-	.enhanced .radio-strip .label-text:after {
-		display: none;
-	}
+.radio-strip,
+.enhanced fieldset.radio-strip {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-top: 1px solid #ddd;
+	/*@include globalShadow;*/
+	border-radius: .35em;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.radio-strip label {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.radio-strip > label {
+	position: relative;
+	padding: 15px 10px;
+	border-bottom: 1px solid #ddd;
+}
+.radio-strip > label:first-child .label-text {
+	border-top-left-radius: .4em;
+	border-bottom-left-radius: .4em;
+}
+.radio-strip > label:last-child .label-text {
+	border-top-right-radius: .4em;
+	border-bottom-right-radius: .4em;
+	border-right: 0;
+}
+.enhanced .radio-strip {
+	display: table;
+}
+.enhanced .radio-strip > label {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	/*@include user-select(none);*/
+	padding: 0;
+	width: 1%; /* divide cell widths */
+	border: 0;
+}
+.enhanced .radio-strip .label-text {
+	position: relative;
+	display: block;
+	padding: 0.75em 0;
+	margin: 0;
+	cursor: pointer;
+	background-color: #fff;
+	text-align: center;
+	border-right: 1px solid #ddd;
+	min-width: 100%;
+}
+.enhanced .radio-strip .checked .label-text {
+	background: #58595B;
+	color: #fff;
+}
+.enhanced .radio-strip .label-text:after {
+	display: none;
 }
