@@ -8,4 +8,4 @@
 
 		$( document ).trigger( "enhance" );
 	});
-}( jQuery ));
+}( window.jQuery || window.shoestring ));

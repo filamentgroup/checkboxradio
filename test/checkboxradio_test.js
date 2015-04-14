@@ -46,9 +46,9 @@
 
 	test( 'toggleCheck', function(){
 		expect(2);
-		ok( !this.cbr.parent.hasClass( "checked" ) );
+		ok( !this.cbr.parent.is( ".checked" ) );
 		this.cbr.toggleCheck();
-		ok( this.cbr.parent.hasClass( "checked" ) );
+		ok( this.cbr.parent.is( ".checked" ) );
 	});
 
 	test( 'change', function(){

@@ -5,6 +5,8 @@
  * Licensed under MIT
  */
 
+window.jQuery = window.jQuery || window.shoestring;
+
 (function( $, w ) {
 	"use strict";
 
@@ -45,6 +47,4 @@
 
 	w.CheckboxRadio = CheckboxRadio;
 
-}( jQuery, this ));
-
-
+}( window.jQuery, this ));
