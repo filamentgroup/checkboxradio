@@ -2,7 +2,7 @@
 
 [![Filament Group](http://filamentgroup.com/images/fg-logo-positive-sm-crop.png) ](http://www.filamentgroup.com/)
 
-jQuery Plugin for progressively enhanced radio buttons and checkboxes
+jQuery or Shoestring Plugin for progressively enhanced radio buttons and checkboxes
 
 ## Getting Started
 Download the [production version][min] or the [development version][max].
@@ -13,10 +13,10 @@ Download the [production version][min] or the [development version][max].
 In your web page:
 
 ```html
-<script src="jquery.js"></script>
+<script src="shoestring.js"></script>
 <script src="dist/checkboxradio.min.js"></script>
 <script>
-jQuery(function($) {
+$(function($) {
 	$( document ).bind( "enhance", function(){
 		$( "body" ).addClass( "enhanced" );
 	});
