@@ -4,6 +4,10 @@
 
 jQuery or Shoestring Plugin for progressively enhanced radio buttons and checkboxes
 
+## Dependencies
+
+1. jQuery or Shoestring
+
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
