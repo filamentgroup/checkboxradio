@@ -1,6 +1,8 @@
-/*! Checkboxradio - v0.1.0 - 2014-05-27
+/*! Checkboxradio - v0.1.0 - 2015-04-14
 * https://github.com/filamentgroup/checkboxradio
-* Copyright (c) 2014 Filament Group; Licensed MIT */
+* Copyright (c) 2015 Filament Group; Licensed MIT */
+window.jQuery = window.jQuery || window.shoestring;
+
 (function( $, w ) {
 	"use strict";
 
@@ -41,9 +43,7 @@
 
 	w.CheckboxRadio = CheckboxRadio;
 
-}( jQuery, this ));
-
-
+}( window.jQuery, this ));
 
 /* global CheckboxRadio:true */
 (function( CheckboxRadio, $ ) {
